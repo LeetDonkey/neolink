@@ -42,6 +42,6 @@ COPY --from=build \
   /usr/local/bin/neolink
 COPY docker/entrypoint.sh /entrypoint.sh
 
-CMD ["/usr/local/bin/neolink", "--config", "/etc/neolink/neolink.toml"]
+CMD ["/usr/local/bin/neolink", "--config", "/etc/neolink/config.toml"]
 ENTRYPOINT ["/entrypoint.sh"]
 EXPOSE 8554 
